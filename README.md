@@ -1,1 +1,0 @@
-# serim971004.github.lo
