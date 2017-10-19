@@ -1,132 +1,128 @@
 <!DOCTYPE html>
- <html>
-   <head>
-    <meta charset="utf-8">
-    <title>Interaction Programmin - week 10</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- <script src="./script2.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        /*버튼 클릭*/
-        var HYGGE = {
-          _aniBool:false,
-          _cuNum:0,
-          _max:2,
-          init:function(){
-            var _this = this;
-            _this.layout();
-            _this.reset();
-            _this.resetInit();
-          },
-          layout:function(){
-            var _this = this;
-            _this.$win = $(window);
-            _this.$nav = $('nav');
-            _this.$navEl = _this.$nav.find('a');
-          },
-          reset:function(){
-            //reset.
-          },
-          resetInit:function(){
-            var _this = this;
-            _this.$win.on('mousewheel', _this.onMouseWheelPage);
-            _this.$navEl.on('click.nav', _this.onClickNavEl);
-          },
-          // 페이지 스크롤
-          onMouseWheelPage:function(e){
-            e.preventDefault();
-            var _this = HYGGE, delta = e.originalEvent.wheelDelta
-            if(_this._aniBool) return;
-            if(delta < 0){
-              _this._cuNum++;
-              if(_this._cuNum > _this._max - 1){
-                _this._cuNum = _this._max - 1;
-              }
-            }else{
-              _this._cuNum--;
-              if(_this._cuNum < 0){
-                _this._cuNum = 0;
-              }
-            }
-            _this.$navEl.eq(_this._cuNum).trigger('click.nav');
-          },
-          onClickNavEl:function(e){
-            e.preventDefault();
-            var _this = HYGGE, $el = $(this), id = $el.attr('href'), top = Math.floor($(id).offset().top);
-            _this.$navEl.removeClass('selected');
-            $el.addClass('selected');
-            _this._aniBool = true;
-            $('html, body').stop(true).animate({scrollTop:top}, {duration: 500, complete:function(){
-              _this._aniBool = false;
-            }});
-          }
-        }
-        $(document).ready(function(){
-          HYGGE.init();
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+        var movementStrength = 50;
+        var height = movementStrength / $(window).height();
+        var width = movementStrength / $(window).width();
+/*         $("#part2").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var pageY = e.pageY - ($(window).height() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            var newvalueY = height * pageY * -1 - 50;
+            $('#part2').css("background-position", newvalueX+"px"+newvalueY+"px");
+        }); */
+/*         $(".profile").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            $('.profile').css("background-position", newvalueX+"px");
+        }); */
+        $(".profile:nth-child(1)").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            $('.profile:nth-child(1)').css("background-position", newvalueX+"px");
         });
+        $(".profile:nth-child(2)").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            $('.profile:nth-child(2)').css("background-position", newvalueX+"px");
+        });
+        $(".profile:nth-child(3)").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            $('.profile:nth-child(3)').css("background-position", newvalueX+"px");
+        });
+        $(".profile:nth-child(4)").mousemove(function(e){
+            var pageX = e.pageX - ($(window).width() / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            $('.profile:nth-child(4)').css("background-position", newvalueX+"px");
+        });
+    });
     </script>
-  </head>
-  <header>
-    <nav id="menu">
-      <ul>
-        <li data-menuanchor="page1"><a href="#mainvisual" class="selected"><b>&nbsp;</b></a></li>
-        <li data-menuanchor="page2"><a href="#alram"><b>&nbsp;</b></a></li>
-      </ul>
+    <title>GKST</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logowhite.png" alt="logowhite">
+    </header>
+    <nav>
+
+        <ul>
+            <li>GUCKKASTEN</li>
+            <li>BIOGRAPHY</li>
+            <li>PROFILE</li>
+            <li>ALLBUM</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </nav>
-  </header>
-  <body>
-    <!-- <div id="todayInfo">
-    </div> -->
-    <div id="mainvisual">
-      <script>
-      var init = function(){
-        //현재 시각 화면에 표시 (초시계)
-        var year = document.getElementById('year');
-        var month = document.getElementById('month');
-        var date = document.getElementById('date');
-
-        var hour =document.getElementById('hour1');
-        var min =document.getElementById('min1');
-        var sec =document.getElementById('sec1');
-        var time;
-
-        function intervalHandler(){
-        time = new Date();
-        year.innerHTML = time.getFullYear()+'.';
-        month.innerHTML = time.getMonth()+1+'.';
-        date.innerHTML = time.getDate()+'.';
-
-        hour.innerHTML = time.getHours();
-        min.innerHTML = time.getMinutes();
-        sec.innerHTML = time.getSeconds();
-        }
-
-        setInterval(intervalHandler,1000);
-      };
-      document.addEventListener('DOMContentLoaded',init);
-      </script>
-        <h1>HELLO MALANG97 WORLD</h1>
-        <h2>TODAY IS..</h2>
-        <div class="wts">
-          <span id="year"></span><span id="month"></span><span id="date"></span><br>
-          <span id="hour1">00</span>:<span id="min1">00</span>:<span id="sec1">00</span><br>
+    <section>
+            <video autoplay loop preload="auto">
+                <source src="./images/Pulse_x.mp4" type="video/mp4">
+            </video>
+        <article id="header">        
+        <div id="maintxt" class="clearfix">
+            <h1>GUCKKASTEN</h1>
+            <p>PURLSE _ Music Video<br>
+            InterParkEntertainment</p> 
         </div>
-    </div>
-    <div id="alram">
-      <div class="watch">
-        <script src="./watch.js"></script>
-          <p>STOP WATCH</p>
-          <span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span>
-            <div class="button">
-              <button id="startButton">Start</button>
-              <button id="stopButton">Stop</button>
-              <button id="resetButton">Reset</button>
-              <button id="lapButton">Lap</button>
-              <button id="lapButton"><a href="alarm.html">GO Alarm</a></button>
+        </article>
+        <article id="biography">
+            <div id="about" class="BiographyTxt">
+                <h1>ABOUT GUCKKASTEN</h1>
+                <p>몽환적이고 싸이키델릭한 사운드,               
+                락밴드 GUCKKASTEN!<br>
+                국카스텐은 고대의 중국식 만화경을 뜻하는 독일어인 국카스텐(GUCKKASTEN)이라는 이름처럼<br>
+                만화경을 들여다 볼때 보이는 아날로그함 속에 숨겨진 사이키델릭한 이미지를 음악으로 표현하고자 하는<br>
+                한국의 락밴드입니다.</p>
             </div>
-        <ul id="lap"></ul>
-      </div>
-    </div>
-  </body>
+            <div id="work" class="BiographyTxt">
+                <h1>AWWARD DETAILS</h1>
+                <ol>2012. MBC 방송연예대상 가수부문 인기상</ol>
+                <ol>2010. 제7회 한국대중음악상 최우수 록노래상</ol>
+                <ol>2010. 제7회 한국대중음악상 신인상</ol>
+                <ol>2008. EBS 스페이스 공감 올해의 헬로루키 대상</ol>
+            </div>
+        </article>
+        <article id="member">
+            <div class="profile">
+                <div class="profTxt">
+                    <h1>하현우(Ha Hyunwoo)</h1>
+                    <h2>1981.11.25</h2>
+                    <h3>position: Vocal</h3>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profTxt">
+                    <h1>전규호(Jun GyuHo)</h1>
+                    <h2>1981.11.25</h2>
+                    <h3>position: Vocal</h3>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profTxt">
+                    <h1>김기범(Kim Kibum)</h1>
+                    <h2>1985.03.22</h2>
+                    <h3>position: Bass</h3>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profTxt">
+                    <h1>이정길(Lee Junggil)</h1>
+                    <h2>1982.02.17</h2>
+                    <h3>position: Drums</h3>
+                </div>
+            </div>
+        </article>
+        <article id=""></article>
+        <article id=""></article>
+    </section>
+</body>
 </html>
