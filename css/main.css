@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Timmana');
-html, body, div, span, applet, object, iframe,
+html, body, .nnn, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -28,11 +28,11 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
-a{text-decoration: none; color:#000;}
+a{text-decoration: none;}
 /* finish */
 body{
     font-family: 'Timmana', sans-serif;
-	color: #fff;
+	color: white;
 }
 nav{
     font-size: 20px;
@@ -43,7 +43,7 @@ nav{
     min-width: 200px;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 9999;
    /*  animation: menuSlide 2s ease-in-out normal; */
 }
 nav ul{
@@ -53,29 +53,47 @@ nav ul li{
     padding: 20px;
     text-align: end;
 }
+nav ul li a{
+    color: white;
+}
 nav ul li:hover{
     border-right: solid 5px white;
     border-left: solid 5px white;
     background-color: rgba(255,255,255,0.4);
 }
+nav #sns .sns{
+    padding: 0;
+    clear: both;
+    width: 50px;
+    margin-right: 20px;
+    float: right;
+}
+nav #sns .sns:hover{
+    border: none;
+    background-color: transparent;
+}
+nav #sns .sns img{
+    width: 50%;
+}
+nav #sns{
+    margin-top: 50px;
+}
+
 header img{
+    z-index: 9999;
     position: fixed;
-    width: 80px;
+    width: 50px;
     left: 10%;
     top:10%;
 }
 article{
-    background-color: black;
+    color: white;
+    background: url("../images/bg1.png")no-repeat;
+    background-size: cover;
+   /*  background-color: #5d0101; */
     height: 100vh;
 }
 video{
-/*     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto; */
     transform: translateX(0%) translateY(-15%);
     position: fixed;
     top: 0; 
@@ -96,17 +114,11 @@ video{
 #maintxt h1{
     font-size: 50px;
 }
-/* .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-    visibility: hidden;
-} */
 #header{
     background-color: transparent;
 }
 #biography{
-    background: url("../images/bg1.png")no-repeat;
+    background: url("../images/_T4A9996.jpg")no-repeat;
     background-size: cover;
 }
 .BiographyTxt{
@@ -133,7 +145,7 @@ video{
 }
 .profile{
     height: 100%;
-    width: 25%;
+    width: 50%;
     float: left;
     color: transparent;
 }
@@ -145,28 +157,123 @@ video{
 }
 .profile:hover{
     color: white;
+}
+
+.profile:nth-child(1){
+    z-index: -1;
+    /*background-color:red;*/
+    background: url("../images/random.jpg")no-repeat;
+    background-size: cover;
+}
+.profile:nth-child(1):hover{
     opacity: 0.5;
 }
-.profile:nth-child(1){
-    /*background-color:red;*/
-    background: url("../images/member01.png")no-repeat;
-    background-size: cover;
-}
 .profile:nth-child(2){
+    z-index: -1;
     /*background-color:#FFD200;*/
-    background: url("../images/member02.png")no-repeat;
+    background: url("../images/_T4A8669.jpg")no-repeat;
     background-size: cover;
 }
-.profile:nth-child(3){
-    /*background-color:#00FF44;*/
-    background: url("../images/member03.png")no-repeat;
-    background-size: cover;
+.profile:nth-child(2):hover{
+    opacity: 0.5;
 }
-.profile:nth-child(4){
-    /*background-color:#8600FF;*/
-    background: url("../images/member04.png")no-repeat;
-    background-size: cover;
+.music h1{
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: -80px;
 }
+#musicplayer>img{
+    width: 600px;
+    height: 600px;
+}
+.playerbox{
+    display: block;
+    width: 600px;
+    height: 503px;
+}
+.playerbox dl{
+    margin-top: 50px;
+}
+.playerbox dt{
+    height: 20px;
+    margin-top: 20px;
+    opacity: 0.3;
+}
+.playerbox dt:hover{
+    opacity: 1;
+}
+section .atc1 .nnn{margin: 0 auto;}
+.atc1 > .nnn ul{width: 600px; margin: 0 auto;display: block;margin-top: 100px;}
+.atc1 > .nnn ul li {
+    width: 600px;
+    height:600px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+.atc1 > .nnn ul li:first-child{background:url(../images/redPlanet.jpg)no-repeat;background-size: cover;}
+.atc1 > .nnn ul li:nth-child(2){background:url(../images/redDiary.jpg)no-repeat;background-size: cover;background-position:bottom}
+.atc1 > .nnn ul li:nth-child(3){background:url(../images/redDiary2.jpg)no-repeat;background-size: cover;}
+.atc1 > .nnn ul li:nth-child(4){background:url(../images/redDiary3.jpg)no-repeat;background-size: cover;}
+
+iframe{width: 100%; height: 100%;}
+.atc1 > .nnn ul li p {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 1.175em;
+}
+
+.atc1 > .nnn ul .items {
+  position: absolute;
+}
+
+.atc1 > .nnn ul .main-pos {
+  margin-left:0 !important;
+  z-index: 3000;
+}
+
+.atc1 > .nnn ul .left-pos {
+  opacity: .5;
+  margin-left: -12em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+
+.atc1 > .nnn ul .back-pos {
+  margin-left: 0 !important;
+  opacity: .05;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.atc1 > .nnn ul .right-pos {
+  opacity: .5;
+  margin-left:  12em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+.atc1 > .nnn{text-align: center;}
+.atc1 > .nnn span {position:relative;top:50%;}
+.atc1 span a{color: white;position: absolute;z-index: 99999;width:70px;height: 100px;border:0;font-size: 0;top:50%;cursor: pointer;opacity: 0.4;transition-property:all; transition-duration: 0.4s ;}
+.atc1 span a:hover{opacity:1;}
+.atc1 #prev{left:10%;margin-left:400px;margin-top:400px;background:url(
+../images/prev_1.png)no-repeat;width: 105px;}
+.atc1 #next{right:10%;margin-right:400px;margin-top:400px;background:url(
+../images/next_1.png)no-repeat;width: 105px;}
+
+audio{
+    width: 600px;
+}
+footer#main p{width:100%; padding:10px 0; background-color:#5d0101; text-align: center; margin-top: 60px;}
+
 /* 가로가 1500px 이하일때 */
 @media (max-width: 1000px)
 {
@@ -190,5 +297,4 @@ video{
         background-size: 210%;
         background-color:#111111;
     }
-}
 }
