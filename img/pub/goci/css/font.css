@@ -1,0 +1,39 @@
+@font-face {
+	font-family:'NanumSquareRound';
+	font-style:normal;
+	font-weight:700;
+	src:local('☺︎'), url("../fonts/NanumSquareRoundB.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+	font-family:'NanumSquareRound';
+	font-style:normal;
+	font-weight:900;
+	src:local('☺︎'), url("../fonts/NanumSquareRoundEB.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+	font-family:'NanumBarunGothic';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺︎'), url("../fonts/NanumBarunGothic.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+	font-family:'NanumBarunGothic';
+	font-style:normal;
+	font-weight:700;
+	src:local('☺︎'), url("../fonts/NanumBarunGothicBold.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+	font-family:'NanumBarunGothic';
+	font-style:normal;
+	font-weight:300;
+	src:local('☺︎'), url("../fonts/NanumBarunGothicLight.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved.*/
+}

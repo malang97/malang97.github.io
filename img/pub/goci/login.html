@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>고물의 가치, 고치</title>
+<link rel="stylesheet" href="./css/menu.css"/>
+<link rel="stylesheet" href="./css/util-menu.css"/>
+<script type="text/javascript" src="./js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+  <header class="viewM">
+    <div class="exit viewM">exit</div>
+    <nav>
+      <ul>
+        <h2>user</h2>
+        <h3 class="user_id">아이디</h3>
+      </ul>
+      <ul class="individual list">
+        <li><a href="my_info.html">내 정보</a></li>
+        <li><a href="donation_list.html">내 기부목록</a></li>
+        <li><a href="application_list.html">고치 신청서 목록</a></li>
+        <li><a href="donation.html">내 기부증서 목록</a></li>
+      </ul>
+      <ul class="business list">
+        <li><a href="my_info.html">내 정보</a></li>
+        <li><a href="buy_list.html">고물 매입 내역</a></li>
+      </ul>
+      <ul>
+        <li class="login"><a href="login.html">로그인</a></li>
+        <li class="logout"><a href="login.html">로그아웃</a></li>
+        <li><a href="member_leave.html">회원탈퇴</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--header end-->
+
+  <section class="login">
+    <div class="menu-top">
+      <div class="micon viewM"></div>
+      <h1 class="logo"><a href="index.html">logo</a></h1>
+      <div class="user_link viewP">
+        <ul class="login">
+          <li class="state_txt"> 로그인 해주세요</li>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+        </ul>
+        <ul class="logout">
+          <li class="state_txt"><span></span>님</li>
+          <li class="logoutB"><a href="login.html">로그아웃</a></li>
+          <li><a href="my_info.html">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav>
+      <ul class="depth1">
+        <li>
+          <a href="main01-sub01.html">고치소개</a>
+          <ul class="depth2">
+            <li><a href="main01-sub01.html">고치란?</a></li>
+            <li><a href="main01-sub02.html">고치 물품</a></li>
+          </ul>
+        </li>
+        <li class="individual">
+          <a href="main02.html">고치기부</a>
+        </li>
+        <li class="business">
+          <a href="main02.html">고치매입<span>N</span></a>
+        </li>
+        <li>
+          <a href="main03-sub01.html">고치뉴스</a>
+          <ul class="depth2">
+            <li><a href="main03-sub01.html">공지사항</a></li>
+            <li><a href="main03-sub02.html">이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="main04-sub01.html">고객센터</a>
+          <ul class="depth2">
+            <li><a href="main04-sub01.html">FAQ</a></li>
+            <li><a href="main04-sub02.html">1:1 문의</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <article class="content">
+      <div class="logo"><h2>로그인</h2>로그인</div>
+      <div class="login_form">
+        <ul class="tabs">
+          <li class="individualT">기부회원</li>
+          <li class="businessT">고물상회원</li>
+        </ul>
+        <div class="panels">
+          <ul class="individual tab">
+            <li class="id">
+              <dl>
+                <dt class="viewM">아이디</dt>
+                <dd><input type="text" placeholder="ID" value="individual" id="id"/></dd>
+              </dl>
+            </li>
+            <li class="pwd">
+              <dl>
+                <dt class="viewM">비밀번호</dt>
+                <dd><input type="password" placeholder="PW" /></dd>
+              </dl>
+            </li>
+            <li class="keep viewM">
+              <input id="checkall1" type="checkbox" />
+              로그인 상태 유지
+            </li>
+            <div class="loginB utilB individualB"><a href="index.html">로그인</a></div>
+          </ul>
+          <ul class="business tab">
+            <li class="id">
+              <dl>
+                <dt class="viewM">아이디</dt>
+                <dd><input type="text" placeholder="ID" value="business" /></dd>
+              </dl>
+            </li>
+            <li class="pwd">
+              <dl>
+                <dt class="viewM">비밀번호</dt>
+                <dd><input type="password" placeholder="PW"/></dd>
+              </dl>
+            </li>
+            <li class="keep viewM">
+              <input id="checkall1" type="checkbox" />
+              로그인 상태 유지
+            </li>
+            <div class="loginB utilB businessB"><a href="index.html">로그인</a></div>
+          </ul>
+        </div>
+      </div>
+      <ul class="support">
+        <li><a href="join.html">회원가입</a></li>
+        <li><a href="find.html">아이디 / 비밀번호 찾기</a></li>
+      </ul>
+      <div class="popup"></div>
+    </article>
+  </section>
+</body>
+<script>
+(function($){
+    $(document).ready(function(){
+      $('.tabs .individualT').click(function(){
+        $('.panels .individual').css('display','block');
+        $('.panels .business').css('display','none');
+        $('.tabs .individualT').css('backgroundColor','#ffc52e');
+        $('.tabs .businessT').css('backgroundColor','#e5e5e5');
+      })
+      $('.tabs .businessT').click(function(){
+        $('.panels .individual').css('display','none');
+        $('.panels .business').css('display','block');
+        $('.tabs .individualT').css('backgroundColor','#e5e5e5');
+        $('.tabs .businessT').css('backgroundColor','#ffc52e');
+      })
+
+      //아이디에 신분 입력
+      if(sessionStorage.state == undefined){
+        $('.user_id').text('로그인 해주세요');
+        $('.user_link .login .state_txt').text('로그인 해주세요');
+        $('.user_link .login').css('display','block');
+        $('.user_link .logout').css('display','none');
+      }
+      if(sessionStorage.state == 'individual'){
+        /*$id = $('#id').val();*/
+        $('.user_id').text('고치기부짱');
+        $('.user_link .logout .state_txt span').text('고치기부짱');
+        /*console.log($id);*/
+        $('.user_link .login').css('display','none');
+        $('.user_link .logout').css('display','block');
+      }
+      if(sessionStorage.state == 'business'){
+        /*$id = $('#id').val();*/
+        $('.user_id').text('고치매입짱');
+        $('.user_link .logout .state_txt span').text('고치매입짱');
+        /*console.log($id);*/
+        $('.user_link .login').css('display','none');
+        $('.user_link .logout').css('display','block');
+      }
+    });
+})(jQuery);
+</script>
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>고물의 가치, 고치</title>
+<link rel="stylesheet" href="./css/menu.css"/>
+<link rel="stylesheet" href="./css/main02.css"/>
+<script type="text/javascript" src="./js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+  <header class="viewM">
+    <div class="exit viewM">exit</div>
+    <nav>
+      <ul>
+        <h2>user</h2>
+        <h3 class="user_id">아이디</h3>
+      </ul>
+      <ul class="individual list">
+        <li><a href="my_info.html">내 정보</a></li>
+        <li><a href="donation_list.html">내 기부목록</a></li>
+        <li><a href="application_list.html">고치 신청서 목록</a></li>
+        <li><a href="donation.html">내 기부증서 목록</a></li>
+      </ul>
+      <ul class="business list">
+        <li><a href="my_info.html">내 정보</a></li>
+        <li><a href="buy_list.html">고물 매입 내역</a></li>
+      </ul>
+      <ul>
+        <li class="login"><a href="login.html">로그인</a></li>
+        <li class="logout"><a href="login.html">로그아웃</a></li>
+        <li><a href="member_leave.html">회원탈퇴</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main02">
+    <div class="menu-top">
+      <div class="micon viewM"></div>
+      <h1 class="logo"><a href="index.html">logo</a></h1>
+      <div class="user_link viewP">
+        <ul class="login">
+          <li class="state_txt"> 로그인 해주세요</li>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+        </ul>
+        <ul class="logout">
+          <li class="state_txt"><span></span>님</li>
+          <li class="logoutB"><a href="login.html">로그아웃</a></li>
+          <li><a href="my_info.html">마이페이지</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav>
+      <ul class="depth1">
+        <li>
+          <a href="main01-sub01.html">고치소개</a>
+          <ul class="depth2">
+            <li><a href="main01-sub01.html">고치란?</a></li>
+            <li><a href="main01-sub02.html">고치 물품</a></li>
+          </ul>
+        </li>
+        <li class="individual">
+          <a href="main02.html">고치기부</a>
+        </li>
+        <li class="business">
+          <a href="main02.html">고치매입<span>N</span></a>
+        </li>
+        <li>
+          <a href="main03-sub01.html">고치뉴스</a>
+          <ul class="depth2">
+            <li><a href="main03-sub01.html">공지사항</a></li>
+            <li><a href="main03-sub02.html">이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="main04-sub01.html">고객센터</a>
+          <ul class="depth2">
+            <li><a href="main04-sub01.html">FAQ</a></li>
+            <li><a href="main04-sub02.html">1:1 문의</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <article class="individual">
+      <div class="logo"><h2>LOGIN</h2>고치 신청서</div>
+      <div class="content">
+        <div class="content_wrap">
+          <div class="content1">
+            <ul>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods1">
+                  <label for="goods1"></label>
+                </div>
+                <dl>
+                  <dt>소형 가전 제품</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>개</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods2">
+                  <label for="goods2"></label>
+                </div>
+                <dl>
+                  <dt>헌 의류</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>Kg</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods3"/>
+                  <label for="goods3"></label>
+                </div>
+                <dl>
+                  <dt>종이류</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>Kg</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods4"/>
+                  <label for="goods4"></label>
+                </div>
+                <dl>
+                  <dt>폐 휴대폰</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>개</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods5"/>
+                  <label for="goods5"></label>
+                </div>
+                <dl>
+                  <dt>비철류</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>Kg</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <div class="check">
+                  <input type="checkbox" id="goods6"/>
+                  <label for="goods6"></label>
+                </div>
+                <dl>
+                  <dt>고철류</dt>
+                  <dd>
+                    <div class="minus change">-</div>
+                    <div class="number"><span>00</span>Kg</div>
+                    <div class="plus change">+</div>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="content2">
+            <div>
+              안녕하세요 <span class="user_id"></span> 입니다.<br />
+              제 고치는 총 <span class="user_total"></span> 입니다.
+              <form id="frm">
+                <div><input type="date" id="userdate" name="userdate" value="2017-11-20"/> 까지</div>
+              </form>
+              <div class="check2">
+                <input type="radio" name="place" id="tohome" value="tohome"/>
+                <label for="tohome"></label>
+                집으로 와주세요
+              </div>
+              <div class="check2">
+                <input type="radio" name="place" id="tocompany" value="tocompany"/>
+                <label for="tocompany"></label>
+                고물상에 갈게요
+              </div>
+              감사합니다.
+            </div>
+            <p>
+              고치 신청서는 고물상에게 전달되는 중요한 정보입니다.<br />
+              정확히 작성해주세요.
+            </p>
+          </div>
+          <div class="content3">
+            <div class="form">
+              <select>
+                <option value="거리순">거리순</option>
+                <option value="규모순">규모순</option>
+              </select>
+            </div>
+            <ul>
+              <li class="active">
+                <dl>
+                  <dt>바른 자원</dt>
+                  <dd>경기도 안양시 동안구 흥안대로 313</dd>
+                  <dd>1.40Km</dd><dd>031-360-2944</dd>
+                  <dd class="map">
+                    <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td><a href="http://map.naver.com/index.nhn?menu=route&lng=de45a3617663b4bfd0405143ca8cfe6d&mapMode=0&lat=4d12abe61789891bcf66455f6d6c25cf&dlevel=12&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1509589971203_-952095814" display="block"; width="100%" height="auto" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td></tr></table>
+                  </dd>
+                  <dd class="more active"></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>태광 고철상</dt>
+                  <dd>경기도 안양시 동안구 귀인로 190번길 61-6</dd>
+                  <dd>1.69Km</dd><dd>031-341-1029</dd>
+                  <dd class="map">
+                    <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td><a href="http://map.naver.com/index.nhn?lng=1a7cbd0b2a9d66e372765ade2604cb80&mapMode=0&lat=7ddd73d6f1faea06fd8f93cf85d1dfee&dlevel=12&enc=b64&menu=route" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1509590313168_591763287" display="block"; width="100%" height="auto" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td></tr></table>
+                  </dd>
+                  <dd class="more"></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>경기 고물상</dt>
+                  <dd>경기도 안양시 동안구 경수대로 570번길 61-12</dd>
+                  <dd>2.33Km</dd><dd>031-0000-0000</dd>
+                  <dd class="map">
+                    <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td><a href="http://map.naver.com/index.nhn?menu=route&lng=69bcf671758f40e3706e23ced1b57097&mapMode=0&lat=d0f0e7d909ff2978cdaf82230e65b767&dlevel=12&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1509590746287_-637473349" display="block"; width="100%" height="auto" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td></tr></table>
+                  </dd>
+                  <dd class="more"></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>함양 고물상</dt>
+                  <dd>경기도 안양시 동안구 흥안대로 237번길 59</dd>
+                  <dd>2.56Km</dd><dd>031-0000-0000</dd>
+                  <dd class="map">
+                    <table cellpadding="0" cellspacing="0" width="100%"> <tr> <td><a href="http://map.naver.com/index.nhn?menu=route&lng=9db1b68107e8e28fdbd8d0ca2ebd02eb&mapMode=0&lat=aec6574ea6ac426e02e8d5e921493a71&dlevel=12&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1509590236683_1354167400" display="block"; width="100%" height="auto" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td></tr></table>
+                  </dd>
+                  <dd class="more"></dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="content4">
+            <ul class="target_list">
+              <li class="active"><img src="images/노인.png" alt="노인"/><p>노인</p></li>
+              <li><img src="images/기아.png" alt="노인"/><p>기아</p></li>
+              <li><img src="images/미혼모.png" alt="미혼모"/><p>미혼모</p></li>
+              <li><img src="images/장애인.png" alt="장애인"/><p>장애인</p></li>
+              <li><img src="images/고아원.png" alt="고아원"/><p>고아원</p></li>
+              <li><img src="images/소년소녀가장.png" alt="소년소녀가장"/><p>소년소녀가장</p></li>
+            </ul>
+          </div>
+          <div class="content5">
+            <ul>
+              <li>
+                <dl class="active">
+                  <dd class="num" value="95">95%</dd>
+                  <dt class="name">치약 한 박스</dt>
+                  <dd>
+                    <progress value="95" max="100">95</progress>
+                    <p>95,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dd class="num" value="70">70%</dd>
+                  <dt class="name">홍삼 스틱</dt>
+                  <dd>
+                    <progress value="70" max="100">70</progress>
+                    <p>70,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dd class="num" value="66">66%</dd>
+                  <dt class="name">쌀 한 포대</dt>
+                  <dd>
+                    <progress value="66" max="100">66</progress>
+                    <p>66,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dd class="num" value="61">61%</ddt>
+                  <dt class="name">휴지</dt>
+                  <dd>
+                    <progress value="61" max="100">61</progress>
+                    <p>610,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dd class="num" value="30">30%</dd>
+                  <dt class="name">목도리, 장갑 세트</dt>
+                  <dd>
+                    <progress value="30" max="100">30</progress>
+                    <p>30,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dd class="num" value="10">10%</dd>
+                  <dt class="name">솜 이불</dt>
+                  <dd>
+                    <progress value="10" max="100">10</progress>
+                    <p>10,000 / 100,000 고치</p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="prevB slideB">이전</div>
+        <div class="nextB slideB">다음</div>
+        <div class="nextB completeB">기부하기</div>
+      </div>
+    </article>
+    <article class="business">
+      <ul class="tabs">
+        <li class="tohomeT">집으로 와주세요</li>
+        <li class="tocompanyT">고물상으로 갈게요</li>
+      </ul>
+      <div class="panels">
+        <ul class="tohome tab">
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tohome1"/>
+              <label for="tohome1"></label>
+            </div>
+            <dl>
+              <dt>아이디1</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-21</span></dd>
+              <dd class="goods">물품 종류 : <span>헌 의류 5Kg 외 2 품목</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>있음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tohome2"/>
+              <label for="tohome2"></label>
+            </div>
+            <dl>
+              <dt>아이디2</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-22</span></dd>
+              <dd class="goods">물품 종류 : <span>비철류 7Kg</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>없음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tohome3">
+              <label for="tohome3"></label>
+            </div>
+            <dl>
+              <dt>아이디3</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-23</span></dd>
+              <dd class="goods">물품 종류 : <span>소형가전제품 1개 외 2 품목</span></dd>
+              <dd class="elevator">승강기 유무 : <span>있음</span></dd>
+              <dd class="parking">주차장 유무 : <span>없음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tohome4"/>
+              <label for="tohome4"></label>
+            </div>
+            <dl>
+              <dt>아이디4</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-24</span></dd>
+              <dd class="goods">물품 종류 : <span>종이류 30Kg</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>없음</span></dd>
+            </dl>
+          </li>
+        </ul>
+        <ul class="tocompany tab">
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tocompany1"/>
+              <label for="tocompany1"></label>
+            </div>
+            <dl>
+              <dt>아이디11</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-21</span></dd>
+              <dd class="goods">물품 종류 : <span>폐 휴대폰 3개 외 2 품목</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>있음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tocompany2"/>
+              <label for="tocompany2"></label>
+            </div>
+            <dl>
+              <dt>아이디12</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-21</span></dd>
+              <dd class="goods">물품 종류 : <span>고철류 13Kg 외 1 품목</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>있음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tocompany3">
+              <label for="tocompany3"></label>
+            </div>
+            <dl>
+              <dt>아이디13</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-21</span></dd>
+              <dd class="goods">물품 종류 : <span>소형가전제품 6개</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>있음</span></dd>
+            </dl>
+          </li>
+          <li>
+            <div class="check">
+              <input type="checkbox" id="tocompany4"/>
+              <label for="tocompany4"></label>
+            </div>
+            <dl>
+              <dt>아이디14</dt>
+              <dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd>
+              <dd class="date">날짜 : <span>2017-11-21</span></dd>
+              <dd class="goods">물품 종류 : <span>헌 의류 30Kg 외 2 품목</span></dd>
+              <dd class="elevator">승강기 유무 : <span>없음</span></dd>
+              <dd class="parking">주차장 유무 : <span>있음</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div class="completeB myB">수거 완료</div>
+    </article>
+    <div class="popup">
+      <div class="login_pop">
+        <h2>logo</h2>
+        <p>로그인이 필요한 서비스입니다.</p>
+        <div class="popB"><a href="login.html">확인</a></div>
+      </div>
+      <div class="complete_pop">
+        <h2>logo</h2>
+        <p>기부 완료 하셨습니다.</p>
+        <p>감사합니다.</p>
+        <ul>
+          <li class="popB"><a href="index.html">확인</a></li>
+          <li class="popB"><a href="application_list.html">마이페이지</a></li>
+        </ul>
+      </div>
+      <div class="complete2_pop">
+        <h2>logo</h2>
+        <p>수고하셨습니다.</p>
+        <p>고물 매입 내역에 추가 되셨습니다.</p>
+        <div class="popB complete2B">확인</div>
+      </div>
+      <div class="check_pop">
+        <h2>logo</h2>
+        <p>모든 항목에 값을 입력해주세요.</p>
+        <div class="popB">확인</div>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+(function($){
+    $(document).ready(function(){
+      //아이디에 신분 입력
+      if(sessionStorage.state == undefined){
+        $('.user_id').text('로그인 해주세요');
+        $('.user_link .login .state_txt').text('로그인 해주세요');
+        $('.user_link .login').css('display','block');
+        $('.user_link .logout').css('display','none');
+      }
+      if(sessionStorage.state == 'individual'){
+        /*$id = $('#id').val();*/
+        $('.user_id').text('고치기부짱');
+        $('.user_link .logout .state_txt span').text('고치기부짱');
+        /*console.log($id);*/
+        $('.user_link .login').css('display','none');
+        $('.user_link .logout').css('display','block');
+      }
+      if(sessionStorage.state == 'business'){
+        /*$id = $('#id').val();*/
+        $('.user_id').text('고치매입짱');
+        $('.user_link .logout .state_txt span').text('고치매입짱');
+        /*console.log($id);*/
+        $('.user_link .login').css('display','none');
+        $('.user_link .logout').css('display','block');
+
+        //현재 속해 있는 메뉴
+        $('nav .depth1>li').eq(2).children('a').css({
+          'height' : '42px',
+          'color' : '#fff',
+          'backgroundColor' : '#ffc52e',
+          'borderBottom' : '3px solid #ffa038'
+        });
+      }
+
+
+      //기부 완료 시
+      console.log(localStorage.test);
+      if(localStorage.test == 'a'){
+        if(localStorage.place === 'tohome'){
+          $('.business .tohome').append(
+            '<li><div class="check"><input type="checkbox" id="tohome5"/><label for="tohome5"></label></div><dl><dt>고치기부짱</dt><dd class="address">주소 : <span>경기 안양시 동안구 시민대로 159번길 59</span></dd><dd class="date">날짜 : <span>'+localStorage.date+'</span></dd><dd class="goods">소형가전제품 1개 외 2 품목</dd><dd class="elevator">승강기 유뮤 : <span>있음</span></dd><dd class="parking">주차장 유뮤 : <span>있음</span></dd></dl></li>')
+            console.log('append tohome!');
+        }if(localStorage.place === 'tocompany'){
+          $('.business .tocompany').append(
+            '<li><div class="check"><input type="checkbox" id="tocompany5"/><label for="tocompany5"></label></div><dl><dt>고치기부짱</dt><dd class="address">경기 안양시 동안구 시민대로 159번길 59</dd><dd class="date">'+localStorage.date+'</dd><dd class="goods">소형가전제품 1개 외 2 품목</dd><dd class="elevator">승강기 유뮤 : <span>있음</span></dd><dd class="parking">주차장 유뮤 : <span>있음</span></dd></dl></li>')
+            console.log('append tocompany!');
+        }
+      }
+      //로그인 안 되어 있을 시
+      console.log(sessionStorage.state);
+      if(sessionStorage.state == undefined){
+          $('.popup').css('display','block');
+          $('.login_pop').css('display','block');
+      }
+
+      //개인회원일 때
+      if(sessionStorage.state == 'individual'){
+        $id = $('#id').val();
+        $('.user_id').text('개인 회원');
+        console.log($id);
+      }
+
+
+      //탭 전환
+      $('.tohomeT').click(function(){
+        $('.panels .tohome').css('display','block');
+        $('.panels .tocompany').css('display','none');
+        $('.tohomeT').css('backgroundColor','#ffc52e');
+        $('.tocompanyT').css('backgroundColor','#e5e5e5');
+      })
+      $('.tocompanyT').click(function(){
+        $('.panels .tohome').css('display','none');
+        $('.panels .tocompany').css('display','block');
+        $('.tohomeT').css('backgroundColor','#e5e5e5');
+        $('.tocompanyT').css('backgroundColor','#ffc52e');
+      })
+
+      //콘텐츠 슬라이드
+      $slide = 0;
+      $('.nextB').click(function(){
+        if($slide < 4){
+          $('.content_wrap').animate({
+            'margin-left':'-=100%'
+          })
+          $slide += 1;
+        }
+        if($slide == 1){
+          //총 고치량
+          $('.user_total').text(addZero($number1*1000+$number2*250+$number3*20+$number4*700+$number5*400+$number6*500));
+        }
+        if($slide == 4){
+          $('.nextB').css('display','none');
+          $('.completeB').css('display','block');
+        }
+      })
+      $('.prevB').click(function(){
+        if($slide > 0){
+          $('.content_wrap').animate({
+            'margin-left':'+=100%'
+          })
+          $('.nextB').css('display','block');
+          $('.completeB').css('display','none');
+          $slide -= 1;
+        }
+      })
+
+      //기부 완료 눌렀을 때
+      $('.completeB').click(function(){
+        //입력 되지 않았을 때
+        if(sessionStorage.state === 'individual'){
+          if($('article.individual input[type=radio]:checked').val() === undefined || $('article.individual input[type=checkbox]:checked').val() == undefined){
+            $('.popup').css('display','block');
+            $('.popup .check_pop').css('display','block');
+            $('.popup .check_pop .popB').click(function(){
+              $('.popup').css('display','none');
+              $('.popup .check_pop').css('display','none');
+            })
+          }else{
+            $('.popup').css('display','block');
+            $('.popup .complete_pop').css('display','block');
+          }
+        }
+      })
+
+      //수거 완료 버튼 눌렀을 시
+      $('.business .completeB').click(function(){
+        $('.popup').css('display','block');
+        $('.popup .complete2_pop').css('display','block');
+      })
+      $('.cancel_pop .cancelB').click(function(){
+        $('.popup').css('display','none');
+        $('.popup .complete2_pop').css('display','none');
+      })
+      //수거 완료 버튼
+      $('.complete2_pop .complete2B').click(function(){
+        del();
+        $('.popup').css('display','none');
+        $('.popup .complete2_pop').css('display','none');
+      });
+        function del(){
+          $(".business input:checked").each(function(){
+            var checked = $(this).attr("checked"); // 체크된 값만을 불러 들인다.
+            $(this).parents('li').remove(); //부모 li 삭제
+        });
+      }
+
+      //한 글자일 때
+      function addZero(num){
+        if(num < 10) {
+          return '0' + num;
+        }
+        return num;
+      }
+
+
+      //수량 증가
+      $number1 = 0; $number2 = 0; $number3 = 0;
+      $number4 = 0; $number5 = 0; $number6 = 0;
+
+      // 체크박스 체크 시
+      $('.content1 li .check').on('click',function(event){
+        event.preventDefault();
+        $(this).parents('li').toggleClass('active');
+        if($(this).find('input').is(':checked') == true){
+          $(this).find('input').attr('checked',false);
+          $(this).parents().find('span').text('00');
+        }else{
+          $(this).find('input').attr('checked',true);
+
+        }
+      });
+
+      /*실패작*/
+      // $('#goods1').click(function(){
+      //   if($("#goods1").is(":checked") == true){
+      //     $('.content1 dl').eq(0).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(0).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(0).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(0).find('dd').css('opacity','0.5');
+      //     $number1 = 0;
+      //     $('.content1 dl').eq(0).find('span').text(addZero($number1));
+      //   }
+      // })
+      // $('#goods2').click(function(){
+      //   if($("#goods2").is(":checked") == true){
+      //     $('.content1 dl').eq(1).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(1).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(1).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(1).find('dd').css('opacity','0.5');
+      //     $number2 = 0;
+      //     $('.content1 dl').eq(1).find('span').text(addZero($number2));
+      //   }
+      // })
+      // $('#goods3').click(function(){
+      //   if($("#goods3").is(":checked") == true){
+      //     $('.content1 dl').eq(2).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(2).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(2).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(2).find('dd').css('opacity','0.5');
+      //     $number3 = 0;
+      //     $('.content1 dl').eq(2).find('span').text(addZero($number3));
+      //   }
+      // })
+      // $('#goods4').click(function(){
+      //   if($("#goods4").is(":checked") == true){
+      //     $('.content1 dl').eq(3).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(3).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(3).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(3).find('dd').css('opacity','0.5');
+      //     $number4 = 0;
+      //     $('.content1 dl').eq(3).find('span').text(addZero($number4));
+      //   }
+      // })
+      // $('#goods5').click(function(){
+      //   if($("#goods5").is(":checked") == true){
+      //     $('.content1 dl').eq(4).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(4).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(4).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(4).find('dd').css('opacity','0.5');
+      //     $number5 = 0;
+      //     $('.content1 dl').eq(4).find('span').text(addZero($number5));
+      //   }
+      // })
+      // $('#goods6').click(function(){
+      //   if($("#goods6").is(":checked") == true){
+      //     $('.content1 dl').eq(5).find('dt').css('opacity','1');
+      //     $('.content1 dl').eq(5).find('dd').css('opacity','1');
+      //   }else{
+      //     $('.content1 dl').eq(5).find('dt').css('opacity','0.5');
+      //     $('.content1 dl').eq(5).find('dd').css('opacity','0.5');
+      //     $number6 = 0;
+      //     $('.content1 dl').eq(5).find('span').text(addZero($number6));
+      //   }
+      // })
+
+
+      //고치 수량 증가 (체크 박스 체크 시에만)
+
+      $('.content1 dl').eq(0).find('.plus').click(function(){
+        if($("#goods1").is(":checked") == true){
+          $number1 += 1;
+          $('.content1 dl').eq(0).find('span').text(addZero($number1));
+        }
+      })
+      $('.content1 dl').eq(0).find('.minus').click(function(){
+        if($("#goods1").is(":checked") == true){
+          if($number1 > 0){
+            $number1 -= 1;
+            $('.content1 dl').eq(0).find('span').text(addZero($number1));
+          }
+        }
+      })
+      $('.content1 dl').eq(1).find('.plus').click(function(){
+        if($("#goods2").is(":checked") == true){
+          $number2 += 1;
+          $('.content1 dl').eq(1).find('span').text(addZero($number2));
+        }
+      })
+      $('.content1 dl').eq(1).find('.minus').click(function(){
+        if($("#goods2").is(":checked") == true){
+          if($number2 > 0){
+            $number2 -= 1;
+            $('.content1 dl').eq(1).find('span').text(addZero($number2));
+          }
+        }
+      })
+      $('.content1 dl').eq(2).find('.plus').click(function(){
+        if($("#goods3").is(":checked") == true){
+          $number3 += 1;
+          $('.content1 dl').eq(2).find('span').text(addZero($number3));
+        }
+      })
+      $('.content1 dl').eq(2).find('.minus').click(function(){
+        if($("#goods3").is(":checked") == true){
+          if($number3 > 0){
+            $number3 -= 1;
+            $('.content1 dl').eq(2).find('span').text(addZero($number3));
+          }
+        }
+      })
+      $('.content1 dl').eq(3).find('.plus').click(function(){
+        if($("#goods4").is(":checked") == true){
+          $number4 += 1;
+          $('.content1 dl').eq(3).find('span').text(addZero($number4));
+        }
+      })
+      $('.content1 dl').eq(3).find('.minus').click(function(){
+        if($("#goods4").is(":checked") == true){
+          if($number4 > 0){
+            $number4 -= 1;
+            $('.content1 dl').eq(3).find('span').text(addZero($number4));
+          }
+        }
+      })
+      $('.content1 dl').eq(4).find('.plus').click(function(){
+        if($("#goods5").is(":checked") == true){
+          $number5 += 1;
+          $('.content1 dl').eq(4).find('span').text(addZero($number5));
+        }
+      })
+      $('.content1 dl').eq(4).find('.minus').click(function(){
+        if($("#goods5").is(":checked") == true){
+          if($number5 > 0){
+            $number5 -= 1;
+            $('.content1 dl').eq(4).find('span').text(addZero($number5));
+          }
+        }
+      })
+      $('.content1 dl').eq(5).find('.plus').click(function(){
+        if($("#goods6").is(":checked") == true){
+          $number6 += 1;
+          $('.content1 dl').eq(5).find('span').text(addZero($number6));
+        }
+      })
+      $('.content1 dl').eq(5).find('.minus').click(function(){
+        if($("#goods6").is(":checked") == true){
+          if($number6 > 0){
+            $number6 -= 1;
+            $('.content1 dl').eq(5).find('span').text(addZero($number6));
+          }
+        }
+      })
+
+      /* --- 고치 기부 --- */
+
+      //물품 선택
+      $('.content5 dl').each(function(){
+        $(this).click(function(){
+          $(this).toggleClass('active');
+          console.log('click');
+        })
+      })
+
+      //지도 선택
+      $('.content3 li').each(function(){
+        $(this).click(function(){
+          $(this).parents().find('li').removeClass('active');
+          $(this).toggleClass('active');
+        })
+      })
+      $('.content3 .more').each(function(){
+        $(this).click(function(){
+          $(this).toggleClass('active');
+          $(this).parents('li').find('table').slideToggle(100);
+        })
+      })
+
+      //기부 대상 선택
+      $('.content4 ul li').each(function(){
+        $(this).click(function(){
+          $(this).parents('ul').find('li').removeClass('active');
+          $(this).toggleClass('active');
+        })
+      })
+      /* --- 고치 기부 End ---*/
+
+      /* --- 고치 매입 --- */
+
+      $('.business .panels ul dl').each(function(){
+        $(this).click(function(){
+          $(this).find('.goods').toggleClass('active');
+          $(this).find('.elevator').toggleClass('active');
+          $(this).find('.parking').toggleClass('active');
+        })
+      })
+      /* --- 고치 매입 End ---*/
+
+    });
+})(jQuery);
+</script>
+</html>

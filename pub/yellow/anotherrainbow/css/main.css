@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: black;
+    color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+}
+header .header_inner img{
+    display: none;
+    margin: 0 auto;
+}
+header .header_top{
+    display: inline-block;
+}
+header .header_top img{
+    width: 60%;
+    position: relative;
+    top: 50%;
+    left: 0;
+}
+header nav span{
+    position: fixed;
+    border: solid 1px white;
+    color: transparent;
+    width: 60%;
+    position: relative;
+    top: 50%;
+    right: 0;
+}
+header nav ul,li{
+    display: none;
+}
+.button{
+    display: block;
+    background-color: dimgray;;
+    width: 100px;
+    padding: 10px 0;
+}
+a.button{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+#mainvisual{
+    width: 100%;
+    height: 600px;
+    background-image: url(http://www.anotherrainbow.com/wp-content/uploads/2014/03/test21.jpg);
+}
+#mainvisual .visualWrapper{
+    display: block;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+#mainvisual .visualWrapper .visualtxt{
+    display: block;
+    margin: 0 auto;
+}
+#mainvisual .visualWrapper .visualtxt h1{
+    font-size: 50px;
+    text-align: center;
+}
+#mainvisual .visualWrapper .visualtxt p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+#Trio{
+    width: 100%;
+    height: 550px;
+    background-color: white;
+}
+#Trio .liWrapper{
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+#Trio .liWrapper img{
+    width: 300px;
+    height: 180px;
+}
+#Trio ul{
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+}
+#Trio ul li{
+    color: lightgray;
+    display: block;
+}
+#Trio h2{
+    font-size: 20px;
+    color: dimgray;
+}
+#Trio h2,p{
+    margin-top: 20px;
+}
+#Trio a{
+    margin-top: 30px;
+}
+#since{
+    height: 450px;
+    background-image: url(http://www.anotherrainbow.com/wp-content/uploads/2014/03/003_1.jpg);
+    background-position: 50% 52px;
+}
+#since .ulWrapper{
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+}
+#since .spanWrapper{
+    width: 90px;
+    height: 100px;
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    top: 50%;
+    bottom: 50%;
+    position: relative;
+}
+#since .spanWrapper span,p{
+    display: block;
+    text-align: center;
+}
+#since .spanWrapper span{
+    font-size: 60px;
+}
+#step{
+    height: 550px;
+    background-image: url(http://www.anotherrainbow.com/wp-content/uploads/2014/03/003_001.jpg);
+    background-position: 50% -1px;
+}
+#step .contentWrapper{
+    float: left;
+    width: 150px;
+    height: 280px;
+    top: 50%;
+    bottom: 50%;
+    position: relative;
+    display: block;
+}

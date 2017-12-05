@@ -1,0 +1,98 @@
+section{font-family:'NanumSquareRound'; font-weight: 900; position: relative;}
+section nav .depth1>li:nth-child(4)>a{color:#fff; height: 42px; border-bottom: 3px solid #ff5454;}
+
+.main3ul{height: 135px; width: 320px; margin: 0 auto;}
+.main3ul li{
+  background-color: #ffc52e;
+  float: left; text-align: center;
+  width: 130px; height: 35px; line-height: 35px;
+  border-radius: 10px; font-size: 14px; margin: 50px 0;
+}
+.main3ul li:first-child{margin-right: 60px;}
+.main3ul li:last-child{background-color: #e5e5e5;}
+.main3ul li a{color:#6d3020; display: block; height: 100%;}
+.main3ul li:hover{background-color: #ffc52e;}
+#GochiNewsWrapper {width: 785px; margin: 0 auto;}
+
+#GochiNewsWrapper #contentWrap #content2{width: 785px; margin: 0 auto;}
+#GochiNewsWrapper #contentWrap #content2 ul{width: 100%;height: 456px;}
+#GochiNewsWrapper #contentWrap #content2 ul li{float: left;margin: 10px 45px;}
+#GochiNewsWrapper #contentWrap #content2 ul li .img{width: 170px;height:170px;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(1) .img{background: url("../images/6.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(2) .img{background: url("../images/event1.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(3) .img{background: url("../images/8.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(4) .img{background: url("../images/9.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(5) .img{background: url("../images/10.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li:nth-child(6) .img{background: url("../images/talk.png")no-repeat;background-size: 100%;}
+#GochiNewsWrapper #contentWrap #content2 ul li dl{font-family:'NanumBarunGothic';font-style:normal;font-weight:300;}
+#GochiNewsWrapper #contentWrap #content2 ul li dl dt{line-height: 15px;}
+#GochiNewsWrapper #contentWrap #content2 ul li dl dt:first-child{font-size: 16px;color: #6c2e21;font-weight:600;margin-top: 10px;}
+#GochiNewsWrapper #contentWrap #content2 ul li dl dt:last-child{font-size: 11px;color: #999999;}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+section nav .depth1>li:nth-child(4)>a{background-color: #FF786E;}
+.appwrapper{margin: 0 auto;}
+
+.main3ul{width: 298px; margin: 0 auto; height: 95px;}
+.main3ul li{margin: 30px 0; font-size: 13px;}
+.main3ul li:first-child{margin-right: 38px;}
+.main3ul li:hover{background-color: #ffc52e;}
+.main3ul li:active{}
+.main3ul li a.bt{display:block;height:100%;line-height:38px; color:#6c2e21;font-family:'NanumSquareRound';font-style:normal;font-weight:900;font-size: 13px;}
+
+  /*sub1*/
+#GochiNewsWrapper{width: 100%;}
+#GochiNewsWrapper #contentWrap{width: 100%;}
+#GochiNewsWrapper #contentWrap table{font-size:12px;}
+#GochiNewsWrapper #contentWrap #content1{}
+  /*sub2*/
+  #GochiNewsWrapper #contentWrap #content2{width: 298px; margin: 0 auto;}
+  #GochiNewsWrapper #contentWrap #content2 ul{width: 100%; height: inherit}
+  #GochiNewsWrapper #contentWrap #content2 ul li{margin: 20px 29px 50px 0;}
+  #GochiNewsWrapper #contentWrap #content2 ul li:nth-child(3n){margin-right: 0;}
+  #GochiNewsWrapper #contentWrap #content2 ul li .img{width: 80px;height:80px;float: left;background-size: 100%;}
+  #GochiNewsWrapper #contentWrap #content2 ul li dl dt:first-child{margin-top: 90px;}
+  #GochiNewsWrapper #contentWrap #content2 ul li dl dt:first-child{font-size: 13px;color: #6c2e21;font-weight:600;}
+  #GochiNewsWrapper #contentWrap #content2 ul li dl dt:last-child{font-size: 10px;color: #999999;}
+  #GochiNewsWrapper #contentWrap table tr td:first-child{text-align: center;padding: 0 19px;}
+
+  .pagination{margin:30px auto; height: 24px;}
+
+}
+
+img{width: 300px;}/*
+.main3ul{margin-top: 30px;width: 100%;} */
+.main3ul li{float:left;}
+.main3ul li:last-child{float: right;}
+
+/*sub1*/
+#GochiNewsWrapper{}
+#GochiNewsWrapper #contentWrap{}
+#GochiNewsWrapper #contentWrap #content1{}
+#GochiNewsWrapper #contentWrap .content{}
+#GochiNewsWrapper #contentWrap table{margin:0 auto;font-family:'NanumBarunGothic';font-weight:300;font-size:13px;width: 100%;color:#6c2e21;}
+#GochiNewsWrapper #contentWrap table tr{line-height: 5;width: 100%; height: 50px; border-bottom:solid 1px #cbcbcb;}
+#GochiNewsWrapper #contentWrap table tr:first-child{text-align: center;font-family:'NanumBarunGothic';font-style:normal;font-weight:bold;}
+#GochiNewsWrapper #contentWrap table tr td{}
+#GochiNewsWrapper #contentWrap table tr td:first-child{text-align: left;padding: 0 19px;}
+#GochiNewsWrapper #contentWrap table tr td a{font-family:'NanumBarunGothic';font-style:normal;font-weight:300;color:#6c2e21;}
+#GochiNewsWrapper #contentWrap table tr td a:nth-child(1){}
+#GochiNewsWrapper #contentWrap table tr td div.slidememo{line-height:20px;color:#999999;}
+#GochiNewsWrapper #contentWrap table tr td div.slidememo button{margin:20px 0;width:50px;height:20px; border-radius:10px;border: 0; background-color: #e5e5e5 ;color:#6c2e21; font-family:'NanumSquareRound'; font-weight:900;font-size: 10px;}
+#GochiNewsWrapper #contentWrap table tr td div.slidememo button:hover{background-color: #ffc52e}
+#GochiNewsWrapper #contentWrap table tr td a:nth-child(1):hover{color:#ffc52e;}
+#GochiNewsWrapper #contentWrap table tr td:last-child{text-align: end;padding: 0 19px;}
+
+footer{margin-top: 400px;}
+
+
+
+
+/*pagination*/
+.text-center{width: 253px; margin: 0 auto;}
+.pagination{margin:50px auto; height: 24px;}
+.pagination li:first-child{margin-left: 0px;}
+.pagination li{line-height : 24px; float: left;margin-left: 10px;font-size: 12px;font-family:'NanumBarunGothic';font-style:normal;font-weight:bold;}
+.pagination li a{color:#6c2e21;}
+.pagination li a:hover{opacity: 0.5;}
+.pagination img{width:13px;margin: 0 10px;}

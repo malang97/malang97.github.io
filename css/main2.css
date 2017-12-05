@@ -1,0 +1,139 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}    
+/* start */
+::-webkit-scrollbar {width: 12px; height: 12px;  }
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px; background: rgba(255, 255, 255, 0.05);}
+::-webkit-scrollbar-track {     background: rgba(0, 0, 0, 0.05); }
+::-webkit-scrollbar-thumb {  background: rgba(0, 0, 0, 0.1);  }
+
+a{color: #fff; text-decoration: none;}
+body{background-color: black;color:white;}
+body section{}
+body section #content_wrap{padding-left:300px;}
+body section #content_wrap .part{border-bottom:solid 1px white;float:right;width:100%;height:100vh;}
+
+/*nav*/
+body section header{position: fixed;left: 0;top: 0;width: 300px;height: 100%;}
+body section header nav{font-size: 15px;}
+body section header nav a#logo{display: block;width: 100%;margin: 50px 0;text-align: center;}
+body section header nav a img{}
+
+body section header nav ul{margin: 100px 30px 0;}
+body section header nav ul li{margin: 50px 0;}
+body section header nav ul li a{}
+body section header nav ul#stop{margin-top:100px;}
+body section header nav ul#stop li{margin: 20px 0;}
+
+/*main*/
+body section #main{}
+body section .grid{height:100%}
+/* body section #main #part1{background-color:black;float: left;width: 460px;}
+body section #main #part2{background: url('../img/profile1_1.jpg')no-repeat;background-size: cover;width:65%;margin-left:460px;} */
+body section #main #part1{float: left;width: 40%;}
+body section #main #part2{background: url('../img/profile1_1.jpg')no-repeat;background-size: cover;float:right;width:60%;}
+body section #main #part1 #maintxt{margin-top:350px;}
+body section #main #part1 #maintxt h1{font-weight: bold;font-size: 35px;}
+body section #main #part1 #maintxt h2{margin-top:10px;font-weight: bold;font-size: 20px;}
+body section #main #part1 #maintxt p{margin-top: 50px;font-size: 12px;width: 230px;line-height: 20px;}
+body section #main #part1 #maintxt p:last-child{margin-top:20px;}
+/*about*/
+body section #about #part1{float: left;width: 70%;}
+body section #about #part2{float:right;width:30%;overflow-y: scroll;}
+body section #about #part2 #maintxt{margin:50px 30px;}
+body section #about #part2 #maintxt h1{font-weight: bold;font-size: 35px;}
+body section #about #part2 #maintxt #logobg{background: url(../img/malang_logo.png)no-repeat;background-size: cover;width: 210px;height: 210px;border: solid 1px #fff;border-radius: 210px;text-align: center;margin: 50px 0;}
+body section #about #part2 #maintxt #logobg a:hover{background-color:white;opacity: 0.3;}
+body section #about #part2 #maintxt #logobg a{height: 210px;width: 210px;display: block;border-radius: 210px;}
+body section #about #part2 #maintxt h2{margin:10px 0 20px 0;font-weight: bold;font-size: 20px;}
+body section #about #part2 #maintxt p{font-size: 12px;width: 230px;line-height: 20px;}
+body section #about #part2 #maintxt p:nth-child(4){font-weight:bold;margin:5px 0;}
+body section #about #part2 #maintxt p:nth-child(5){margin: 10px 0;}
+body section #about #part2 #maintxt p:nth-child(6){margin-bottom:50px;}
+body section #about #part2 #maintxt p:nth-child(8){margin-bottom:50px;}
+body section #about #part2 #maintxt p:nth-child(10){margin: 10px 0;}
+/*work*/
+body section #work{}
+body section #work #worktxt{float: left;width: 30%;}
+body section #work #worktxt #work_txtwrap{margin-top:50px;}
+body section #work #worktxt #work_txtwrap h1{font-weight: bold;font-size: 35px;}
+body section #work #worktxt #work_txtwrap p{margin-top: 10px;font-size: 12px;width: 200px;line-height: 20px;}
+body section #work #workcontent{float:right;width:70%;}
+body section #work #workcontent ul{overflow-y: scroll;height: 100%;}
+body section #work #workcontent ul li{position:relative;width: 100%;height: 360px;overflow: hidden;}
+body section #work #workcontent ul li .img{height: 100%;}
+body section #work #workcontent ul li:nth-child(1) .img{background: url('../img/gkst1.png')no-repeat;background-size: cover;}
+body section #work #workcontent ul li:nth-child(2) .img{background: url('../img/hygge_1.png')no-repeat;background-size: cover;}
+body section #work #workcontent ul li:nth-child(3) .img{background: url('../img/gochi_1.jpg')no-repeat;background-size: cover;}
+body section #work #workcontent ul li:nth-child(4) .img{background: url('../img/wannalip.png')no-repeat; background-size: cover;}
+body section #work #workcontent ul li a p{width:100%;padding: 167px 0;color:transparent;position: absolute;top: 0px;right:0;font-size: 13px;text-align: center;}
+body section #work #workcontent ul li a p:hover{color:white;background-color: black; opacity: 0.7;}
+/*contect*/
+span#bar{margin:20px 0;width:100%;display:block;border-bottom: solid 3px #fff;}
+body section #contect{}
+body section #contect #contect_part1{float: left;width: 70%;background: url('../img/profile1_2.jpg')no-repeat;background-size: cover;}
+body section #contect #contect_part2{float: right;width:30%;}
+body section #contect #contect_part2 #maintxt{margin: 50px 15px 0 25px;}
+body section #contect #contect_part2 #maintxt h1{font-weight: bold;font-size: 35px;}
+body section #contect #contect_part2 #maintxt p{margin-top: 10px;font-size: 12px;width: 200px;line-height: 20px;}
+body section #contect #contact_form{width:100%;}
+body section #contect #contact_form form{text-align: center;}
+body section #contect #contact_form fieldset p{width: 100%!important;}
+body section #contect #contact_form h2{font-weight:bold;font-size: 20px;margin: 13px 0;}
+body section #contect #contact_form input{border:0; width:100%;}
+body section #contect #contact_form textarea{border:0;height:200px;width:98%;}
+body section #contect #contact_form button{font-weight:bold;font-size:18px;width: 100%;border:solid 2px #fff;background-color: transparent;color:white;padding: 10px 0;}
+body section #contect #contact_form button:hover{border:solid 2px gold; background-color:gold; }
+
+
+footer{display:inline-block;width: 100%;text-align: center;padding: 30px 0 10px 0;margin: 0 0 20px 0;border-top: solid 1px white;}
+
+
+
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+  }

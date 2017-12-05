@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}legend{border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}
+
+/*! scaffolding */
+body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,select,table,td,textarea,th,ul{margin:0;padding:0}html{font-size:10px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}a{text-decoration:none}img{border:0;vertical-align:top}ol,ul{list-style:none}address{font-style:normal;font-weight:400}hr{display:none}fieldset{border:0}legend{visibility:hidden;font-size:0;line-height:0}input[type=search],input[type=text],input[type=tel],input[type=password],textarea{box-sizing:border-box}input[type=checkbox],input[type=radio]{margin:4px 0 0;line-height:normal}[role=button]{cursor:pointer}.sr_only{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0,0,0,0)}.table{width:100%;border-collapse:collapse;border-spacing:0}.table caption{visibility:hidden;font-size:0;line-height:0}
+
+/*! layout */
+body {color:#999; font-size:13px; line-height:1.1538461538461537; font-family:"Dobra W01 Medium", "나눔고딕", naunumGothic, arial, sans-serif;}
+a {color:#999;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+#wrap {position:relative; min-width:1280px; margin:0 auto;}
+#content {position:relative; width:1280px; padding-bottom:120px; margin:0 auto; background:#fff;}
+/*= skipnav */
+#skipnav a {overflow:hidden; position:absolute; top:0; left:0; z-index:300; width:1px; height:1px; margin:-1px; background:#000; color:#fff; font-weight:bold; font-size:15px; text-decoration:none; text-align:center; opacity:0.8; filter:alpha(opacity=80);}
+#skipnav a:focus {width:100%; height:auto; margin:0; padding:15px 0; border-bottom:1px solid #000;}
+/*= header */
+#header {position:fixed; top:0; left:0; z-index:100; width:100%;}
+#header .inner {width:1280px; margin:0 auto;}
+#header .sns_lang {position:absolute; top:0; left:0; z-index:5; width:100%; height:25px; background:#fff; font-family:"Dobra W01 Medium";}
+#header .sns_lang li {float:left;}
+#header .sns_lang a {display:block; height:25px; line-height:25px;}
+#header .sns {float:left;}
+#header .sns a {width:25px;}
+#header .sns img {vertical-align:middle;}
+#header .sns_youtube {display:none1;}
+#header .lang {float:right; background:url(http://yellodm.com/assets/images/web/common/btn_lang.jpg) no-repeat;}
+#header .lang li {padding-left:6px;}
+#header .lang a {width:16px; text-indent:-9999em;}
+#header .logo_gnb {position:absolute; top:0; left:0; width:100%; padding-top:50px;}
+#header .logo {float:left;}
+[lang="en"] #header .lang {background-position:100% 0;}
+[lang="ko"] #header .lang {background-position:100% 100%;}
+[lang="en"] #header .lang .en,
+[lang="ko"] #header .lang .ko {pointer-events:none; cursor:default;}
+
+#header.fixed .sns_lang,
+#header.fixed .logo_gnb {position:fixed; border-bottom:1px solid #d3d3d3; background:#fff; -webkit-animation:fix-header .6s ease-out both; animation:fix-header .6s ease-out both;}
+#header.fixed .inner {width:auto; min-width:650px; max-width:1280px;}
+#header.fixed .logo_gnb {height:40px;}
+#header.fixed .logo {margin-top:-10px;}
+#header.fixed .logo img {height:35px;}
+
+#page_visual {overflow:hidden; min-width:1280px; height:235px; background-color:#232127; background-repeat:no-repeat; background-position:50% 100%;}
+#page_visual .inner {width:1280px; margin:0 auto; padding-top:145px;}
+#page_visual .inner h2 {position:relative; height:90px; padding-left:165px; color:#fff; font-size:80px; font-family:'Dobra W01 Black'; line-height:1;}
+#page_visual .inner h2:before {position:absolute; bottom:0; left:-45px; width:210px; height:160px; background-repeat:no-repeat; content:"";}
+#page_aboutus #page_visual {background-image:url(http://yellodm.com/assets/images/web/aboutus/bg_visual.jpg);}
+#page_aboutus #page_visual .inner h2:before {background-image:url(http://yellodm.com/images/web/aboutus/icon_visual.gif);}
+#page_insights #page_visual {background-image:url(http://yellodm.com/assets/images/web/insights/bg_visual.jpg);}
+#page_insights #page_visual .inner h2:before {background-image:url(http://yellodm.com/images/web/insights/icon_visual.gif);}
+#page_ydmnow #page_visual {background-image:url(http://yellodm.com/assets/images/web/ydmnow/bg_visual.jpg);}
+#page_ydmnow #page_visual .inner h2:before {background-image:url(http://yellodm.com/images/web/ydmnow/icon_visual.gif);}
+
+/*= gnb */
+#gnb {float:right;}
+#gnb ul:after {display:table; clear:both; content:"";}
+#gnb li {float:left; padding-left:80px;}
+#gnb a {color:#fff; font-weight:bold; font-size:20px; font-family:'Dobra W01 Bold'; line-height:1; -webkit-transition:color .4s ease-in-out; transition:color .4s ease-in-out;}
+#gnb a:hover,
+#gnb a:focus {color:#ffbb04 !important;}
+#header.fixed #gnb a {color:#261d18;}
+#page_aboutus #gnb .gnb_aboutus a,
+#page_insights #gnb .gnb_insights a,
+#page_ydmnow #gnb .gnb_ydmnow a {color:#ffbb04 !important;}
+
+/*= layer */
+.layer,
+.layer_bg {position:fixed; top:0; left:0; width:100%; height:100%;}
+.layer {display:none; overflow:auto; overflow-x:hidden; z-index:1000;}
+.layer_bg {background:#000; opacity:.8; filter:alpha(opacity=80);}
+.layer_content {position:relative; width:660px; margin:100px auto 10px; background:#fff; box-sizing:border-box;}
+.layer_close {position:absolute; top:-40px; right:0;}
+
+/*= search */
+.content_search_wrap {padding-bottom:35px;}
+.content_search_wrap:after {display:table; clear:both; content:"";}
+.content_search_wrap form {position:relative; float:right; width:240px; padding-right:50px;}
+.content_search_wrap .search_process {display:none;}
+.content_search_wrap input[type="text"] {width:100%; height:40px; padding:11px 1px 9px 9px; border-radius:0; border:1px solid #cfd0d2; font-size:16px; line-height:18px; box-sizing:border-box;}
+.content_search_wrap button {position:absolute; top:0; right:0; width:50px; height:40px; border:0; background:#5f5f61 url(http://yellodm.com/assets/images/web/insights/btn_search.png) no-repeat 50% 50%; text-align:center; text-indent:-9999em; -webkit-appearance:none; appearance:none;}
+
+
+/*! content */
+/*= main*/
+#page_main #header {position:relative; height:auto; padding-top:0; background:none;}
+#page_main #page_visual {display:none;}
+#page_main #content {width:auto; min-width:1280px; padding-bottom:0; background:#000;}
+#page_main .visual {overflow:hidden; position:relative; width:100%; height:824px;}
+#page_main .visual .header {position:absolute; top:50%; left:50%; z-index:10; margin:-50px 0 0 -580px; font-family:"Dobra W01 Medium"; opacity:1; filter:alpha(opacity=100); transition:opacity 1s ease-in;}
+#page_main .visual .header.hide {opacity:0; filter:alpha(opacity=0);}
+#page_main .visual .header h2 {color:#fff; font-weight:normal; font-size:72px; font-family:"Dobra W01 Black"; line-height:.9;}
+#page_main .visual .header h2 small {color:#a1a09f; font-size:15px; font-family:"Dobra W01 Medium";}
+#page_main .visual .header .btn_movie {padding-top:20px;}
+#page_main .visual .header .btn_movie a {display:block; width:200px; height:190px; background:url(http://yellodm.com/assets/images/web/main/btn_movie_ydm.png) no-repeat 0 0; text-indent:-9999em; -webkit-animation:movie-play 1s steps(30, end) infinite; animation:movie-play 1s steps(30, end) infinite;}
+
+#page_main .visual .video {position:fixed; top:0; left:0; width:100%; height:100%;}
+#page_main .visual .main_loof {position:absolute; top:50%; left:50%; margin:-500px 0 0 -800px; background:#000;}
+#page_main .visual .main_loof:before {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://yellodm.com/images/web/main/bg_layer_loof.png) no-repeat; content:"";}
+#page_main .visual .main_loof video {width:1600px; height:1000px; background:#000;}
+#page_main .visual .part {position:absolute; bottom:0; left:50%; width:529px; height:284px; margin-left:-700px; background:url(http://yellodm.com/images/web/main/bg_main_part.png) no-repeat; opacity:1; filter:alpha(opacity=100); transition:opacity .3s ease-in;}
+#page_main .visual .part.hide {opacity:0; filter:alpha(opacity=0);}
+
+#page_main .visual .bg {position:fixed; top:0; left:0; width:100%; height:824px; background:#000; opacity:0; filter:alpha(opacity=0); transition:opacity .2s ease-in;}
+#page_main .visual .bg.show {opacity:.6; filter:alpha(opacity=60);}
+
+#page_main .ydm_movie .layer_content {width:1280px; background:none;}
+#page_main .ydm_movie .layer_content iframe {width:1280px; height:720px;}
+#page_main .ydm_movie .layer_close {top:-50px;}
+
+#page_main .family {overflow:hidden; position:relative; z-index:50; height:824px; background:url(http://yellodm.com/assets/images/web/main/bg_member.png) no-repeat 50% 0;}
+#page_main .family .bg {position:absolute; top:0; left:0; z-index:-1; width:100%; height:100%; background:#000; opacity:0; filter:alpha(opacity=0); transition:opacity .2s ease-in;}
+#page_main .family .bg.show {opacity:.8; filter:alpha(opacity=80);}
+#page_main .family .movie {position:absolute; top:0; left:0; z-index:-1; width:100%; height:100%; background:#000; opacity:0; filter:alpha(opacity=0);}
+#page_main .family .movie video {display:none1; position:absolute; top:0; left:50%; width:1600px; height:824px; margin-left:-800px;}
+#page_main .family .movie .loading {position:absolute; top:0; left:0; z-index:10; width:100%; height:100%; background:#000 url(http://yellodm.com/images/web/main/bg_loading.jpg) no-repeat 50% 0; opacity:1; filter:alpha(opacity=90);}
+#page_main .family .movie .loading .inner {position:absolute; top:50%; left:50%; width:100px; margin:-60px 0 0 -50px; color:#fff; font-size:11px; text-align:center;}
+#page_main .family .movie .loading .inner div {width:100px; height:100px; background:url(http://yellodm.com/assets/images/web/main/bg_loading.png) no-repeat 0 0; text-indent:-9999em; -webkit-animation:loading-play 1s steps(23, end) infinite; animation:loading-play 1s steps(23, end) infinite;}
+
+#page_main .family .movie .loading span {display:inline-block; padding-top:15px;}
+#page_main .family .movie .loading.hide {display:none;}
+#page_main .family .movie a {visibility:hidden; position:absolute; top:0; left:50%; background:#fff; text-indent:-9999em; opacity:0; filter:alpha(opacity=0);}
+#page_main .family .movie .link {width:300px; height:90px; margin:320px 0 0 190px;}
+#page_main .family .movie .close {width:52px; height:56px; margin:388px 0 0 590px;}
+#page_main .family .movie.show {z-index:50; opacity:1; filter:alpha(opacity=100); transition:opacity .4s ease-in;}
+#page_main .family .movie.btn a {visibility:visible;}
+#page_main .family .inner {width:1280px; margin:0 auto; padding-top:70px;}
+#page_main .family .header {opacity:0; filter:alpha(opacity=0); transition:opacity 0.8s ease-in;}
+#page_main .family .header h2 {color:#fff; font-weight:normal; font-size:25px; font-family:"Dobra W01 Black";}
+#page_main .family .header.show {opacity:1; filter:alpha(opacity=100);}
+#page_main .family .btn_scroll {position:absolute; top:20px; left:50%; margin-left:-31px; -webkit-animation:scroll-play 5s linear 10s infinite; animation:scroll-play 5s linear 10s infinite;}
+#page_main .family .btn_scroll.hide {filter:alpha(opacity=0); -webkit-animation:scroll-stop .6s linear both; animation:scroll-stop .6s linear both;}
+
+#page_main .family h2,
+#page_main .family p {height:30px;}
+#page_main .family ul {padding:189px 0 0 73px;}
+#page_main .family ul:after {display:table; clear:both; content:"";}
+#page_main .family li {float:left; width:142px; height:123px;}
+#page_main .family .cleverads {padding-right:142px;}
+#page_main .family .adplus {padding-left:356px;}
+#page_main .family .hcp {padding-left:497px;}
+#page_main .family .motherbrain {padding-left:426px;}
+#page_main .family span{color: transparent;}
+#page_main .family .adplus a,
+#page_main .family .adplus span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_adplus.png);}
+#page_main .family .adqua a,
+#page_main .family .adqua span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_adqua.png);}
+#page_main .family .adyim a,
+#page_main .family .adyim span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_adyim.png);}
+#page_main .family .cleverads a,
+#page_main .family .cleverads span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_cleverads.png);}
+#page_main .family .computerlogy a,
+#page_main .family .computerlogy span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_computerlogy.png);}
+#page_main .family .dbroscreative a,
+#page_main .family .dbroscreative span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_dbroscreative.png);}
+#page_main .family .dmajor a,
+#page_main .family .dmajor span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_dmajor.png);}
+#page_main .family .dodamcomms a,
+#page_main .family .dodamcomms span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_dodamcomms.png);}
+#page_main .family .emotion a,
+#page_main .family .emotion span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_emotion.png);}
+#page_main .family .futurestream a,
+#page_main .family .futurestream span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_futurestream.png);}
+#page_main .family .gushcloud a,
+#page_main .family .gushcloud span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_gushcloud.png);}
+#page_main .family .handstudio a,
+#page_main .family .handstudio span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_handstudio.png);}
+#page_main .family .hcp a,
+#page_main .family .hcp span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_hcp.png);}
+#page_main .family .innobirds a,
+#page_main .family .innobirds span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_innobirds.png);}
+#page_main .family .madpig a,
+#page_main .family .madpig span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_madpig.png);}
+#page_main .family .mediatrac a,
+#page_main .family .mediatrac span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_mediatrac.png);}
+#page_main .family .motherbrain a,
+#page_main .family .motherbrain span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_motherbrain.png);}
+#page_main .family .purplefriends a,
+#page_main .family .purplefriends span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_purplefriends.png);}
+#page_main .family .recobell a,
+#page_main .family .recobell span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_recobell.png);}
+#page_main .family .springworks a,
+#page_main .family .springworks span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_springworks.png);}
+#page_main .family .yellostory a,
+#page_main .family .yellostory span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_yellostory.png);}
+#page_main .family .wisebirds a,
+#page_main .family .wisebirds span {background-image:url(http://yellodm.com/assets/images/web/main/img_member_wisebirds.png);}
+#page_main .family .list a {display:block; position:relative; width:140px; height:80px; background-repeat:no-repeat; background-position:0 -41px;}
+
+
+#page_main .insights_wrap,
+#page_main .ydmnow_wrap {position:relative; z-index:50; background:#fff;}
+#page_main .ydmnow_wrap {padding-bottom:100px;}
+#page_main .insights {padding-top:70px;}
+#page_main .content_list_wrap {width:1280px; margin:0 auto;}
+#page_main .content_list_wrap .header {padding-bottom:25px;}
+#page_main .content_list_wrap .header h3 {color:#000; font-size:25px; font-weight:normal; font-family:"Dobra W01 Black";}
+#page_main .content_list_wrap .header h3 a {color:#000;}
+#page_main .content_list_wrap .header p {font-size:12px; font-family:"Dobra W01 Book";}
+
+
+/*= insights */
+#page_insights .main {position:relative; height:420px; padding-top:85px;}
+#page_insights .main .list ul {overflow:hidden; position:relative; height:400px;}
+#page_insights .main .list li {overflow:hidden; position:absolute; top:0; left:0; width:610px; height:auto; min-height:355px; margin-left:0; padding:0 100px 0 570px; border:0; background:#fff;}
+#page_insights .main .list li:first-child {z-index:3;}
+#page_insights .main .list li:before {border:0;}
+#page_insights .main .list .date {padding-top:0; color:#a3a3a3; font-size:28px; font-family:"Dobra W01 Bold";}
+#page_insights .main .list .title {height:auto; padding:15px 0; font-size:35px; font-weight:bold; font-family:"Dobra W01 Bold", "나눔고딕", naunumGothic, arial, sans-serif;}
+#page_insights .main .list .title a {color:#000;}
+#page_insights .main .list .content {max-height:195px;}
+#page_insights .main .list .photo {position:absolute; top:0; left:0; width:532px; height:auto; margin-top:0;}
+#page_insights .main .list .photo:after {overflow:hidden; position:absolute; top:auto; right:0; bottom:0; left:auto; width:0; height:0; border:25px solid; border-color:transparent #fff #fff transparent; content:"";}
+#page_insights .main .list .more {position:absolute; right:0; bottom:0;}
+#page_insights .main .nav {position:absolute; top:85px; right:0; z-index:10; width:300px; height:30px; text-align:right;}
+#page_insights .main .nav a {display:inline-block; overflow:hidden; width:17px; height:20px; background:url(http://yellodm.com/assets/images/web/common/icon_nav.png) no-repeat 0 0; color:transparent; text-indent:-9999em;}
+#page_insights .main .nav a.on, 
+#page_insights .main .nav a:hover, 
+#page_insights .main .nav a:focus {background-position:0 -20px;}
+#page_insights .main .nav a + a {margin-left:10px;}
+#page_insights .newsletter_form + #content .main {padding-top:65px;}
+#page_insights .newsletter_form + #content .main .nav {top:65px;}
+#page_insights .sub .more {padding-bottom:40px; text-align:center;}
+#page_insights .newsletter_form {height:67px; padding:40px 0; background:#ffbb04; text-align:center;}
+#page_insights .newsletter_form div {display:inline-block;}
+#page_insights .newsletter_form label,
+#page_insights .newsletter_form input,
+#page_insights .newsletter_form button {float:left;} 
+#page_insights .newsletter_form label {padding-right:25px; height:67px; color:#000; font-size:25px; font-family:"Dobra W01 Medium"; line-height:67px;}
+#page_insights .newsletter_form input[type="text"] {width:500px; height:67px; padding:23px 1px 22px 19px; border:1px solid #cecece; border-right:0; background:#fff; font-size:20px; line-height:22px; vertical-align:top;}
+#page_insights .newsletter_form button {width:170px; height:67px; padding-top:1px; border:1px solid; border-color:#404040 #656565 #3f3f3f #494949; background:#4e4f51; background:-webkit-linear-gradient(#676767, #2a2a2a 100%); background:linear-gradient(#676767, #2a2a2a 100%); color:#fff; font-size:28px; font-family:"Dobra W01 Bold"; line-height:1;}
+#page_insights .newsletter_form button span {display:block; color:#b3b3b3;}
+#page_insights .newsletter_title {height:30px; padding-top:10px; margin-bottom:-40px; font-size:17px;}
+#page_insights .newsletter_title strong {color:#000; font-size:28px; font-family:"Dobra W01 Bold";}
+
+/*= list */
+.content_list_wrap {background:#fff;}
+.content_list_wrap .header, 
+.content_list_wrap .list {overflow:hidden;}
+.content_list_wrap .list ul {width:1320px;}
+.content_list_wrap .list li {float:left; position:relative; width:290px; margin-right:40px;}
+.content_list_wrap .list li:before {position:absolute; top:0; left:0; width:100%; height:0; border-radius:2px; border:2px solid #5f6062; box-sizing:border-box; content:"";}
+.content_list_wrap .list .category_date {padding-top:14px; font-size:14px; line-height:1;}
+.content_list_wrap .list .category_date:after {display:table; clear:both; content:"";}
+.content_list_wrap .list .category {float:left; color:#f3b700;}
+.content_list_wrap .list .date {padding-top:14px; color:#bbb; font-size:14px; line-height:1; text-transform:uppercase;}
+.content_list_wrap .list .category_date .date {float:right; padding-top:0;}
+.content_list_wrap .list .title {height:55px; padding-top:10px; color:#000; font-size:16px; line-height:1;}
+.content_list_wrap .list .content {overflow:hidden; font-size:13px; line-height:15px;}
+.content_list_wrap .list .photo {overflow:hidden; position:relative; margin-top:15px;}
+.content_list_wrap .list .photo img {max-width:100%;}
+.content_list_wrap.insights .list li {height:500px;}
+.content_list_wrap.insights .list .title {overflow:hidden; height:30px; margin-bottom:5px;}
+.content_list_wrap.insights .list .content {min-height:29px; max-height:29px;}
+.content_list_wrap.insights .list .no_photo .content {max-height:330px;}
+.content_list_wrap.insights .list .photo:after {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://yellodm.com/assets/images/web/insights/bg_insights_list_mask.png) no-repeat 50% 50%; content:"";}
+.content_list_wrap.ydmnow .list li {margin-bottom:20px;}
+.content_list_wrap.ydmnow .list .photo {margin-top:7px;}
+
+/*= ydm now */
+#page_ydmnow .header {position:relative; z-index:10; width:1280px; height:115px; margin:0 auto;}
+#page_ydmnow .header .category {float:right; position:relative; width:185px; padding-top:50px; color:#000; font-size:15px; font-family:"Dobra W01 Bold";}
+#page_ydmnow .header .category p {position:relative; height:25px; padding-left:5px; background:url(http://yellodm.com/assets/images/web/ydmnow/bu_category.png) no-repeat 100% 4px;}
+#page_ydmnow .header .category p:before {position:absolute; bottom:0; left:0; width:100%; height:4px; border-radius:2px; background:#000; font-size:0; box-sizing:border-box; content:"";}
+#page_ydmnow .header .category a {display:block; color:#000;}
+#page_ydmnow .header .category ul {display:none; position:absolute; top:44px; left:0; width:100%; background:#fff;}
+#page_ydmnow .header .category li {height:30px; padding-left:5px; border-bottom:1px solid #ddd; line-height:30px;}
+#page_ydmnow .header .category li:first-child {background:url(http://yellodm.com/assets/images/web/ydmnow/bu_category_up.png) no-repeat 100% 9px;}
+#page_ydmnow .content_list_wrap .list li {padding-bottom:70px;}
+
+/*= footer */
+#footer {position:relative; z-index:100; padding:30px 0; background:#333435;}
+#footer_inner {position:relative; width:1280px; margin:0 auto;}
+#footer_inner:after {display:table; clear:both; content:"";}
+#footer .logo {padding-left:68px; float:left;}
+#footer .menu {float:right; width:930px;}
+#footer .menu h2 {padding-bottom:12px; font-size:10px;}
+#footer .visitus,
+#footer .talktous,
+#footer .talktous a,
+#footer .followus {color:#b4b5b5; font-family:"Dobra W01 Bold"; line-height:14px;}
+#footer .visitus {position:relative; float:left; font-size:11px; text-transform:uppercase;}
+#footer .talktous .mail,
+#footer .followus .text {padding-bottom:2px;}
+#footer .visitus .btn_map {position:absolute; top:-2px; left:70px;}
+#footer .talktous {float:left; margin-left:125px;}
+#footer .followus {float:left; margin-left:95px;}
+#footer .newsletter {float:right; min-height:57px; padding-left:72px; background:url(http://yellodm.com/assets/images/web/common/icon_footer_newsletter.png) no-repeat 0 0;}
+#footer .info {display:none; position:absolute; top:48px; left:68px; width:240px; font-weight:bold; font-size:10px;}
+#footer .info p {float:left;}
+#footer .info p + p {float:right;}
+[lang="ko"] #footer .info {display:block;}
+#footer .copyright {position:absolute; top:50px; left:68px;}
+[lang="ko"] #footer .copyright {top:65px;}
+#footer .webaward {position:absolute; top:-4px; left:0;}
+
+
+/*새로 알게 된 사실들-css*/
+/*
+
+1)
+현업에서 사용했던 css코드구조들을 보니까 계속 :before, :after 코드가 보이길래 이게 대체 뭐지 싶었다.
+나는 무조건 속성값을 지정할때 그냥 다 따로따로 하나씩 css속성을 넣었었는데....ㅎㅎㅎㅎ...ㅎ.ㅎㅎ
+
+:before요소는 해당 선택자의 앞에 속성값을 설정 할 때 사용합니다. (::before는 css3요소로써 ie9 미만에선 작동하지 않습니다.)
+:after요소는 해당 선택자의 뒤에 속성값을 설정 할 때 사용합니다. (::after는 css3요소로써 ie9 미만에선 작동하지 않습니다.)
+
+content 속성은 요소의 전후에 :before 나 :after라는 의사클래스 이름을 사용하여 텍스트 나 이미지 등의 콘텐츠를 삽입 할 때 사용한다. 
+이 가짜 요소는 HTML 문서에 정보로 포함되지 않은 요소를 CSS에 의해 새롭게 생성해주는 가상의 요소이다.
+이 content 속성을 사용하여 표시한 내용은 선택하거나 복사 및 붙여 넣기를 할 수 없다. 
+실제 마크업 된 정보가 아니기 때문이다. 만일, 실제 정보로 취급하고 싶은 경우는 HTML 내에 작성해야 한다.
+
+처음에는 before, after의 사전적 의미처럼 진짜 두가지 요소가 마치 hover처럼 태그가 달라질때 쓰거나, 
+시각적으로 구분시킬때나 쓰는 태그인줄 알았다.
+
+하지만 before, after 속성들은
+1.텍스트끼리 서로 구분할 경우
+2.특수코드를 변환없이 그대로 보여줄 경우
+3.백그라운드 이미지를 해당 문구 앞 또는 뒤에 삽입하는 경우 에만 쓰인다한다.
+
+2)
+[lang="언어"] : 언어별로 css지정할때 쓰인다.
+
+3)
+이미지에 opacity를 줄때
+    filter: alpha(opacity=50); 이런식으로 알파값으로 지정해주어 더 편하게 이용가능하다.
+
+4)
+box-sizing
+box-sizing은 박스의 크기를 화면에 표시하는 방식을 변경하는 속성입니다. 
+width와 height는 엘리먼트의 컨텐츠의 크기를 지정합니다. 
+따라서 테두리가 있는 경우에는 테두리의 두께로 인해서 원하는 크기를 찾기가 어렵습니다. 
+box-sizing 속성을 border-box로 지정하면  테두리를 포함한 크기를 지정할 수 있기 때문에 예측하기가 더 쉽습니다. 
+최근엔 모든 엘리먼트에 이 값을 지정하는 경우가 늘고 있습니다. 
+
+5)
+text-transform:uppercase
+문자를 대문자로 전환하는 속성
+none 은 기본값으로 텍스트를 html코드 그대로 보여줌
+capitalize 각 단어의 첫글자만,
+uppercase 모두 대문자로,
+lowercase 모두 소문자로 바꿔준다.
+
+*/
+
