@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/libs/jquery.min.js"></script>
+    <script src="./js/jquery.scrollify.min.js"></script>
+    <style>
+        body section #work #workcontent ul{overflow-y: scroll!important;}
+        body section #work #workcontent ul li{overflow: hidden!important;}
+    </style>
 </head>
 <body>
     <section>
         <header>
             <nav>
-                <a href="#main" id="logo"><img src="" alt="">M</a>
+                <a href="#main" id="logo"><img src="./img/mainLogo.png" alt="">LOGO</a>
                 <ul id="action">
                     <li data-menuanchor="page1"><a href="#about"><span class="category">#ABOUT_ME</span></a></li>
                     <li data-menuanchor="page2"><a href="#work"><span class="category">#WORK</span></a></li>
                     <li data-menuanchor="page3"><a href="#contect"><span class="category">#CONTACT</span></a></li>
                 </ul>
                 <ul id="stop">
-                    <li>INSTARGRAM</li>
-                    <li>TEL:01038868027</li>
-                    <li>serim971004@naver.com</li>
+                    <li><a href="https://www.instagram.com/malangismine/"><img src="./img/insta.png" alt="">INSTARGRAM</a></li>
+                    <li><a href="tel:010-3886-8027"><img src="./img/call.png" alt="">TEL:01038868027</a></li>
+                    <li><a href="href=mailto:serim971004@naver.com"><img src="./img/mail.png" alt="">serim971004@naver.com</a></li>
                 </ul>
             </nav>
+            <footer> <p>Copyrightⓒ2017 JeongSerim(malang_97)</p>  </footer>
         </header>
         <div id="content_wrap">
             <div id="main" class="part">
@@ -31,7 +37,7 @@
                     <div id="maintxt">
                         <h1>#GIVORN;<br>-</h1>
                         <h2>#GIVE_BORN_TO_CODE</h2>
-                        <p> 기본을 탄생시키다. 기본.<br>
+                        <p> 생명을 불어넣는 기본.<br>
                             #퍼블리싱<br>
                             -<br>
                             #안녕하십니까 #말랑구칠_정세림_입니다.
@@ -43,13 +49,41 @@
             </div>
             <div id="about" class="part">
                     <div id="part1" class="grid">
-                       <ul>
-                           <li><div id="container"></div></li>
-                           <li></li>
-                           <li></li>
-                           <li></li>
-                           <li></li>
-                       </ul>
+                        <div class="item">
+                            <h2>#GIVORN; #GIVE_BORN_TO_CODE</h2>
+                            <p> 기본을 탄생시키다. 기본.<br>
+                                내 생각을 담은 작업물.<br>
+                                전 작업물을 하나의 경이로운 생명체라고 생각합니다.<br>-<br>
+                                그러한 작업물들을<br>가장 기본적인 웹 언어로 코딩하는것.<br>
+                                저는 그 작업을 
+                                경이로운 생명에<br>숨을 불어넣는다고 생각하여<br>-<br>
+                                생명을(BORN)+탄생시키다(GIVE)<br>라는 모토를 만들었습니다.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h2>#CAREER</h2>
+                            <p>아모레퍼시픽_뷰티어드바이저<br>
+                                2017.08~</p>
+                            <p>네이처리퍼블릭_뷰티카운셀러<br>
+                                2016.10~2017.08</p>
+                        </div>
+                        <div class="item">
+                            <h2>#SKILLS</h2>
+<!--                             <ul class="graph">
+                                <li>HTML/CSS<div id="container"></div></li>
+                                <li>jQuery<div id="container"></div></li>
+                                <li>Photoshop<div id="container"></div></li>
+                                <li>Illustrator<div id="container"></div></li>
+                                <li>Drawing<div id="container"></div></li>
+                            </ul> -->
+                            <ul class="graph">
+                                <li>HTML/CSS<span class="progress_bar"><span class="per">80%</span></span></li>
+                                <li>jQuery<span class="progress_bar"><span class="per">30%</span></span></li>
+                                <li>Photoshop<span class="progress_bar"><span class="per">40%</span></span></li>
+                                <li>Illustrator<span class="progress_bar"><span class="per">60%</span></span></li>
+                                <li>Drawing<span class="progress_bar"><span class="per">80%</span></span></li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="part2" class="grid">
                         <div id="maintxt">
@@ -61,20 +95,7 @@
                             2016.03~2018.02 졸업예정</p>
                             <p>인천예일고등학교_미술과<br>
                             2013.03.02~2016.02 졸업</p>
-                            <h2>#GIVORN; #GIVE_BORN_TO_CODE</h2>
-                            <p> 기본을 탄생시키다. 기본.<br>
-                                내 생각을 담은 작업물.<br>
-                                전 작업물을 하나의 경이로운 생명체라고 생각합니다.<br>-<br>
-                                그러한 작업물들을<br>가장 기본적인 웹 언어로 코딩하는것.<br>
-                                저는 그 작업을 
-                                경이로운 생명에<br>숨을 불어넣는다고 생각하여<br>-<br>
-                                생명을(BORN)+탄생시키다(GIVE)<br>라는 모토를 만들었습니다.
-                            </p>
-                            <h2>#CAREER</h2>
-                            <p>아모레퍼시픽_뷰티어드바이저<br>
-                                2017.08~</p>
-                            <p>네이처리퍼블릭_뷰티카운셀러<br>
-                                2016.10~2017.08</p>
+                            <p>#GIVORN; #GIVE_BORN_TO_CODE<br>#기본을_더하다. #퍼블리셔</p>
                         </div>
                     </div>
             </div>
@@ -168,27 +189,69 @@
                     </div>
                 </div>
             </div>
-            <footer> <p>Copyrightⓒ2017 JeongSerim(malang_97)</p>  </footer>
-        </div>
-        <script src="./js/progressbar.min.js"></script>
-        <script>
-        var bar = new ProgressBar.Circle(container, {
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        duration: 2500,
-        easing: 'bounce',
-        strokeWidth: 6,
-        from: {color: '#FFEA82', a:0},
-        to: {color: '#ED6A5A', a:1},
-        // Set default step function for all animate calls
-        step: function(state, circle) {
-            circle.path.setAttribute('stroke', state.color);
-        }
-        });
 
-        bar.animate(0.5);  // Number from 0.0 to 1.0
-        </script>
+        </div>
     </section> 
+    <script>
+    $(document).ready(function() {  
+        //scrollify
+        $.scrollify({
+            section : '.part',
+            scrollbars: false,
+            before: animating,
+            afterRender: about_ani
+        });              
+        //section 애니메이션
+        function animating() {
+            var SectionPart = $.scrollify.current();
+            if (SectionPart.id == 'main'){
+                about_stop();
+                console.log('main');
+            } else if (SectionPart.id == 'about'){
+                about_ani();
+                console.log('about');
+            } else if (SectionPart.id == 'work'){
+                about_stop();
+                console.log('work');
+            } else if (SectionPart.id == 'contect'){
+                about_stop();
+                console.log('contect');
+            }
+        };
+        function about_stop() {
+/*                 $('#about #part1').animate({opacity:0,left:'-100%'},300,function() {
+                $(this).find('.item:eq(0)').stop().animate({opacity:0,left:'-50px'},300);
+                $(this).find('.item:eq(1)').stop().animate({opacity:0,left:'-50px'},300);
+                $(this).find('.item:eq(2)').stop().animate({opacity:0,left:'-50px'},300); */
+                $('.graph').removeClass('move');
+            /* }); */
+            console.log('ani stop');
+        };
+        function about_ani() {  
+               $('#about #part1').animate({opacity:1,left:0},700,function() {
+/*                 $(this).find('.item:eq(0)').delay(300).animate({opacity:1,left:0},300);
+                $(this).find('.item:eq(1)').delay(450).animate({opacity:1,left:0},300); */
+                $(this).find('.item:eq(2)').delay(300).animate({opacity:1,left:0},300);
+                $('.graph').addClass('move');      
+            });
+            console.log('ani start');
+        };
+        /*마우스 움직일때 그림움직이기*/
+        var movementStrength = 25;
+        var height = movementStrength / $(window).height();
+        var width = movementStrength / $(window).width();
+        $("#main #part2").mousemove(function(e){
+                var pageX = e.pageX - ($(window).width() / 2);
+                var pageY = e.pageY - ($(window).height() / 2);
+                var newvalueX = width * pageX * -1 - 20;
+                var newvalueY = height * pageY * -0 - 0;
+                $('#main #part2').css("background-position", newvalueX+"px     "+newvalueY+"px");
+        });
+        console.log('jquery ready');
+    });
+    </script>
+    <script>
+
+    </script>
 </body>
 </html>
